@@ -50,9 +50,9 @@ optional arguments:
 
 ## Example
 
-The following shows an example of retrieving an app from an iOS device and using iPatch to help dump and then splice back in the now unencrypted seection:
+The following shows an example of retrieving an app from an iOS device and using iPatch to help dump and then splice back in the now unencrypted section:
 
- 1. This could all be done on an iDevice but would require ensuring python and the lief library are correctly installed.  Also it is always handy to have the application files for further analysis so first step is idenifying where the app we want to dump is on the device:
+ 1. It is always handy to have the application files for further analysis so first step is idenifying where the app we want to dump is on the device:
 
 ```
 iPhone:~ root# find /var/containers/Bundle/Application/ -iname "*.app" 2>/dev/null
@@ -142,7 +142,3 @@ So based on the definition above we can see that for the Mach-O this was taken f
 ## Contribute
 
 Feel free to make any suggestions for improvement or requests and forgive the terrible Python.
-
-## TODO
-
-See what happens when Apple release their ARM based Macs and whether we end up with fat binaries or anything else to consider when analysing the binary.
